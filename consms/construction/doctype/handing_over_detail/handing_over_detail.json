@@ -1,0 +1,54 @@
+{
+ "creation": "2020-02-17 15:33:59.362672",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "uom",
+  "qty",
+  "remarks__status"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_name.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remarks__status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks / Status"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-02-17 15:45:29.470760",
+ "modified_by": "Administrator",
+ "module": "Construction",
+ "name": "Handing Over Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

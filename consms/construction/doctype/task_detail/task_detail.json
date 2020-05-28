@@ -1,0 +1,71 @@
+{
+ "creation": "2020-02-04 11:01:23.099190",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "uom",
+  "qty",
+  "budgeted_rate",
+  "budgeted_amount"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "item.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "budgeted_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "options": "Company:company:default_currency",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "budgeted_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "Company:company:default_currency",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-02-14 16:34:59.378665",
+ "modified_by": "Administrator",
+ "module": "Construction",
+ "name": "Task Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

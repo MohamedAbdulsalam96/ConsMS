@@ -1,0 +1,245 @@
+{
+ "autoname": "format:{OPN-LOG}-{######}",
+ "creation": "2020-02-17 16:15:42.898534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "project_name",
+  "type_of_plant_or_equipment",
+  "column_break_4",
+  "hirer_name",
+  "operator_name",
+  "supervisor_name",
+  "time_section",
+  "start_time",
+  "end_time",
+  "standby_hrs",
+  "breakdown_hrs",
+  "column_break_13",
+  "total_hrs",
+  "rate",
+  "amount",
+  "fuel_and_lubricants_section",
+  "fuel_type",
+  "fuel_litre",
+  "oil_litre",
+  "other_cost_not_sure",
+  "section_break_22",
+  "weather",
+  "section",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type_of_plant_or_equipment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type of Plant or Equipment",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hirer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hirer Name",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operator_name",
+   "fieldtype": "Data",
+   "label": "Operator Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supervisor_name",
+   "fieldtype": "Link",
+   "label": "Supervisor Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_section",
+   "fieldtype": "Section Break",
+   "label": "TIME"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "standby_hrs",
+   "fieldtype": "Float",
+   "label": "Standby Hrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "breakdown_hrs",
+   "fieldtype": "Float",
+   "label": "Breakdown Hrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_hrs",
+   "fieldtype": "Float",
+   "label": "Total Hrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fuel_and_lubricants_section",
+   "fieldtype": "Section Break",
+   "label": "FUEL AND LUBRICANTS"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "\nDIESEL\nPETROL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fuel_litre",
+   "fieldtype": "Float",
+   "label": "Fuel Litre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "oil_litre",
+   "fieldtype": "Float",
+   "label": "Oil Litre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "other_cost_not_sure",
+   "fieldtype": "Data",
+   "label": "Other Cost NOT SURE"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "weather",
+   "fieldtype": "Select",
+   "label": "Weather",
+   "options": "\nSunny\nRainy\nCloudy"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Link",
+   "label": "Section",
+   "options": "Task"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Plant and Equipment Operation Log Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-02-17 16:17:00.470667",
+ "modified_by": "Administrator",
+ "module": "Construction",
+ "name": "Plant and Equipment Operation Log Sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,133 @@
+{
+ "creation": "2020-02-13 14:31:06.726393",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "column_break_2",
+  "activity",
+  "section_break_4",
+  "maintenance",
+  "column_break_6",
+  "fuel_type",
+  "fuel_qty_lts",
+  "oil_qty_lts",
+  "section_break_10",
+  "start_time",
+  "end_time",
+  "standby_hrs",
+  "column_break_14",
+  "effective_hrs",
+  "rate",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "maintenance",
+   "fieldtype": "Long Text",
+   "label": "Maintenance"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_type",
+   "fieldtype": "Select",
+   "label": "Fuel Type",
+   "options": "\nDiesel\nPetrol",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fuel_qty_lts",
+   "fieldtype": "Float",
+   "label": "Fuel Qty (Lts)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "oil_qty_lts",
+   "fieldtype": "Float",
+   "label": "Oil Qty (Lts)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "standby_hrs",
+   "fieldtype": "Float",
+   "label": "Standby Hrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "effective_hrs",
+   "fieldtype": "Float",
+   "label": "Effective Hrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-02-13 15:21:42.862468",
+ "modified_by": "Administrator",
+ "module": "Construction",
+ "name": "DWP Equipment",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

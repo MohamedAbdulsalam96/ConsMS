@@ -1,0 +1,69 @@
+{
+ "owner": "Administrator",
+ "doctype": "DocType",
+ "module": "Construction",
+ "sort_field": "modified",
+ "field_order": [
+  "task",
+  "work_section",
+  "unit",
+  "qty",
+  "rate",
+  "amount"
+ ],
+ "quick_entry": 1,
+ "name": "DWP Task",
+ "istable": 1,
+ "engine": "InnoDB",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "creation": "2020-02-13 14:20:28.824078",
+ "permissions": [],
+ "editable_grid": 1,
+ "modified": "2020-02-13 14:20:28.824078",
+ "fields": [
+  {
+   "in_list_view": 1,
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Task",
+   "reqd": 1
+  },
+  {
+   "reqd": 1,
+   "fieldname": "work_section",
+   "fieldtype": "Data",
+   "label": "Work Section"
+  },
+  {
+   "in_list_view": 1,
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "label": "Unit"
+  },
+  {
+   "reqd": 1,
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "in_list_view": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "reqd": 1,
+   "label": "Rate"
+  },
+  {
+   "in_list_view": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "modified_by": "Administrator"
+}

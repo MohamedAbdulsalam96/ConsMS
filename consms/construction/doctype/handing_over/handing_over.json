@@ -1,0 +1,138 @@
+{
+ "autoname": "HO-#####",
+ "creation": "2020-02-17 15:31:03.873855",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location_name",
+  "handing_over_person",
+  "handed_over_person",
+  "column_break_4",
+  "date",
+  "supervising_officer_name",
+  "witness_person_name",
+  "amended_from",
+  "section_break_9",
+  "handing_over_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "location_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "handing_over_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Handing Over Person",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "handed_over_person",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Handed Over Person",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supervising_officer_name",
+   "fieldtype": "Link",
+   "label": "Supervising Officer Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "witness_person_name",
+   "fieldtype": "Link",
+   "label": "Witness Person Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Handing Over",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "handing_over_detail",
+   "fieldtype": "Table",
+   "label": "Handing Over Detail",
+   "options": "Handing Over Detail"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-02-17 15:35:58.852840",
+ "modified_by": "Administrator",
+ "module": "Construction",
+ "name": "Handing Over",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

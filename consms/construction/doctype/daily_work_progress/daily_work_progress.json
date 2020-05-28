@@ -1,0 +1,206 @@
+{
+ "allow_import": 1,
+ "autoname": "format:{project_name}-{date}-{work_shift}",
+ "creation": "2020-02-13 12:31:11.252394",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "title",
+  "weather",
+  "site_condition",
+  "column_break_5",
+  "date",
+  "work_shift",
+  "total_amount",
+  "section_break_8",
+  "task_progress",
+  "task_amount_total",
+  "section_break_10",
+  "equipment_record",
+  "equipment_amount_total",
+  "section_break_15",
+  "material_utilised",
+  "material_amount_total",
+  "section_break_18",
+  "labour_utilised",
+  "labour_amount_total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "weather",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Weather",
+   "options": "\nRainy\nSunny\nCloudy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "site_condition",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Site Condition",
+   "options": "\nDry\nWet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "work_shift",
+   "fieldtype": "Data",
+   "label": "Work Shift",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task_progress",
+   "fieldtype": "Table",
+   "label": "Task Progress",
+   "options": "DWP Task"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "equipment_record",
+   "fieldtype": "Table",
+   "label": "Equipment Record",
+   "options": "DWP Equipment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Work Progress",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "task_amount_total",
+   "fieldtype": "Currency",
+   "label": "Task Amount Total"
+  },
+  {
+   "fieldname": "equipment_amount_total",
+   "fieldtype": "Currency",
+   "label": "Equipment Amount Total"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "material_utilised",
+   "fieldtype": "Table",
+   "label": "Material Utilised",
+   "options": "DWP Material"
+  },
+  {
+   "fieldname": "material_amount_total",
+   "fieldtype": "Currency",
+   "label": "Material Amount Total"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "labour_utilised",
+   "fieldtype": "Table",
+   "label": "Labour Utilised",
+   "options": "DWP Labour"
+  },
+  {
+   "fieldname": "labour_amount_total",
+   "fieldtype": "Currency",
+   "label": "Labour Amount Total"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-02-14 17:13:07.733452",
+ "modified_by": "Administrator",
+ "module": "Construction",
+ "name": "Daily Work Progress",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
